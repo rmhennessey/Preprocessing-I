@@ -226,21 +226,31 @@ header nav a {
   background-color: whitesmoke;
 }
 @media (max-width: 500px) {
-  .main-content .main-content {
+  .main-content {
+    width: 100%;
     max-width: 490px;
+    display: flex;
     margin: 0 auto;
   }
 }
 .main-content .intro {
   vertical-align: center;
 }
-.main-content h2 {
+@media (max-width: 500px) {
+  .main-content .intro {
+    width: 100%;
+    max-width: 490px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+.main-content .intro h2 {
   font-size: 30px;
   padding-bottom: 15px;
   margin-bottom: 5px;
   color: blue;
 }
-.main-content p {
+.main-content .intro p {
   font-size: 20px;
 }
 .intro-bottom {
@@ -278,13 +288,40 @@ header nav a {
   justify-content: space-evenly;
   background-color: white;
 }
+@media (max-width: 500px) {
+  .bio {
+    width: 100%;
+    max-width: 490px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0px;
+  }
+}
 .bio .overview {
   width: 48%;
+}
+@media (max-width: 500px) {
+  .bio .overview {
+    width: 100%;
+    max-width: 490px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
 .bio .skills {
   width: 48%;
 }
+@media (max-width: 500px) {
+  .bio .skills {
+    width: 100%;
+    max-width: 490px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
 .bio li {
   border: 1px solid lightgray;
   padding: 10px 10px;
+  background-color: orange;
 }
