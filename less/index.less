@@ -65,6 +65,14 @@ h1, h2, h3, h4, h5 {
 }
 
 
+/* VARIABLE */
+
+@call-color: blue;
+
+@button-fy: orange;
+
+
+
 /* MIXINS */
 
 .list(){
@@ -79,7 +87,6 @@ h1, h2, h3, h4, h5 {
 .list-bg-gray(){
 	background-color: lightgray;
 }
-
 
 /*General */
 
@@ -97,11 +104,13 @@ header {
 	padding-bottom: 5px;
 	display: flex;
 	justify-content: space-between;
+	align-items: baseline;
 
 		h1 {
 			font-size: 30px;
-			color: blue;
 			justify-content: flex-start;
+			color: @call-color;
+
 		}
 
 			nav {
@@ -133,6 +142,7 @@ header {
 					font-size: 30px;
 					padding-bottom: 15px;
 					margin-bottom: 5px;
+					color: @call-color;
 				}
 
 					p {
@@ -165,7 +175,7 @@ header {
 					button {
 						border: 1px solid black;
 						border-radius: 5px;
-						background-color: white;
+						background-color: @button-fy;
 						margin-top: 15px;
 						padding: 10px;
 

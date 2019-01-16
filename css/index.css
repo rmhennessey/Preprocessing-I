@@ -144,6 +144,7 @@ h5 {
   margin-bottom: 15px;
   padding-top: 15px;
 }
+/* VARIABLE */
 /* MIXINS */
 /*General */
 .container {
@@ -158,11 +159,12 @@ header {
   padding-bottom: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 header h1 {
   font-size: 30px;
-  color: blue;
   justify-content: flex-start;
+  color: blue;
 }
 header nav {
   justify-content: space-between;
@@ -190,6 +192,7 @@ header nav a {
   font-size: 30px;
   padding-bottom: 15px;
   margin-bottom: 5px;
+  color: blue;
 }
 .main-content .intro p {
   font-size: 20px;
@@ -216,7 +219,7 @@ header nav a {
 .intro-bottom .team-up button {
   border: 1px solid black;
   border-radius: 5px;
-  background-color: white;
+  background-color: orange;
   margin-top: 15px;
   padding: 10px;
 }
