@@ -106,6 +106,14 @@ header {
 	justify-content: space-between;
 	align-items: baseline;
 
+		@media (max-width: 500px) {
+			width: 100%;
+			max-width: 490;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+		}
+
 		h1 {
 			font-size: 30px;
 			justify-content: flex-start;
@@ -115,7 +123,19 @@ header {
 
 			nav {
 				justify-content: space-between;
+			
+				@media (max-width: 500px) {
+					display: flex;
+					width: 100%;
+					max-width: 490px;
+					flex-direction: column;
+					margin-top: 18px;
+					margin-right: 1px;
+					align-content: center;
+				}
+
 			}
+
 
 				nav a{
 					text-decoration: none;
@@ -123,8 +143,26 @@ header {
 					font-family: sans-serif;
 					color: gray;
 					padding-left: 30px;
+				
+					@media(max-width: 500px) {
+						margin: 0 auto;
+						width: 100%;
+						font-size: 20px;
+						color: lightgray;
+						font-weight: bold;
+						text-decoration: none;
+						border-top: 1px solid gray;
+						padding: 20px;
+						align-items: center;
+						text-align: center;
+					
+					}
+
+					}
+
 				}
-}
+
+			
 
 	.main-content {
 		width: 100%;
@@ -134,9 +172,17 @@ header {
 		padding-top: 20px;
 		display: flex;
 		background-color: whitesmoke;
+
+		@media(max-width: 500px) {
+			.main-content {
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
 	
 			.intro {
 				vertical-align: center;
+					}
 			
 				h2 {
 					font-size: 30px;
@@ -151,7 +197,6 @@ header {
 
 			}
 	
-	}
 
 	.intro-bottom {
 		width: 100%;

@@ -161,6 +161,15 @@ header {
   justify-content: space-between;
   align-items: baseline;
 }
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    max-width: 490;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
 header h1 {
   font-size: 30px;
   justify-content: flex-start;
@@ -169,12 +178,37 @@ header h1 {
 header nav {
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    width: 100%;
+    max-width: 490px;
+    flex-direction: column;
+    margin-top: 18px;
+    margin-right: 1px;
+    align-content: center;
+  }
+}
 header nav a {
   text-decoration: none;
   font-size: 16px;
   font-family: sans-serif;
   color: gray;
   padding-left: 30px;
+}
+@media (max-width: 500px) {
+  header nav a {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 20px;
+    color: lightgray;
+    font-weight: bold;
+    text-decoration: none;
+    border-top: 1px solid gray;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
 }
 .main-content {
   width: 100%;
@@ -185,16 +219,22 @@ header nav a {
   display: flex;
   background-color: whitesmoke;
 }
+@media (max-width: 500px) {
+  .main-content .main-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .main-content .intro {
   vertical-align: center;
 }
-.main-content .intro h2 {
+.main-content h2 {
   font-size: 30px;
   padding-bottom: 15px;
   margin-bottom: 5px;
   color: blue;
 }
-.main-content .intro p {
+.main-content p {
   font-size: 20px;
 }
 .intro-bottom {
