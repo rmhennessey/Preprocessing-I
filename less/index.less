@@ -108,16 +108,21 @@ header {
 
 		@media (max-width: 500px) {
 			width: 100%;
-			max-width: 490;
+			max-width: 490px;
 			display: flex;
 			flex-direction: column;
 			align-content: center;
+			margin: 0px;
 		}
 
 		h1 {
 			font-size: 30px;
 			justify-content: flex-start;
 			color: @call-color;
+
+			@media (max-width: 500px){
+				margin: 0 auto;
+			}
 
 		}
 
@@ -157,10 +162,10 @@ header {
 						text-align: center;
 					
 					}
-
-					}
-
 				}
+}
+
+				
 
 			
 
@@ -173,9 +178,9 @@ header {
 		display: flex;
 		background-color: whitesmoke;
 
-		@media(max-width: 500px) {
+		@media (max-width: 500px) {
 			.main-content {
-				width: 100%;
+				max-width: 490px;
 				margin: 0 auto;
 			}
 		}

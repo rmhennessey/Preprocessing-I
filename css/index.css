@@ -164,16 +164,22 @@ header {
 @media (max-width: 500px) {
   header {
     width: 100%;
-    max-width: 490;
+    max-width: 490px;
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin: 0px;
   }
 }
 header h1 {
   font-size: 30px;
   justify-content: flex-start;
   color: blue;
+}
+@media (max-width: 500px) {
+  header h1 {
+    margin: 0 auto;
+  }
 }
 header nav {
   justify-content: space-between;
@@ -221,7 +227,7 @@ header nav a {
 }
 @media (max-width: 500px) {
   .main-content .main-content {
-    width: 100%;
+    max-width: 490px;
     margin: 0 auto;
   }
 }
