@@ -57,3 +57,146 @@ html, body {
     height: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+}
+
+
+/* MIXINS */
+
+.list(){
+	border: 1px solid lightgray;
+	padding: 10px 10px;
+}
+
+.list-bg-white(){
+	background-color: white;
+}
+
+.list-bg-gray(){
+	background-color: lightgray;
+}
+
+
+/*General */
+
+
+.container {
+	width: 980px;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	max-width: 870px;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+
+		h1 {
+			font-size: 30px;
+			color: blue;
+			justify-content: flex-start;
+		}
+
+			nav {
+				justify-content: space-between;
+			}
+
+				nav a{
+					text-decoration: none;
+					font-size: 16px;
+					font-family: sans-serif;
+					color: gray;
+					padding-left: 30px;
+				}
+}
+
+	.main-content {
+		width: 100%;
+		max-width: 870px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-top: 20px;
+		display: flex;
+		background-color: whitesmoke;
+	
+			.intro {
+				vertical-align: center;
+			
+				h2 {
+					font-size: 30px;
+					padding-bottom: 15px;
+					margin-bottom: 5px;
+				}
+
+					p {
+						font-size: 20px;
+					}
+
+			}
+	
+	}
+
+	.intro-bottom {
+		width: 100%;
+		max-width: 870px;
+		margin: 0 auto;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		display: flex;
+		background-color: whitesmoke;
+		
+			.team-up {
+				width: 100%;
+				flex: auto;
+				vertical-align: center;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				margin-bottom: 15px;
+				border-top: 1px solid gray;
+			
+					button {
+						border: 1px solid black;
+						border-radius: 5px;
+						background-color: white;
+						margin-top: 15px;
+						padding: 10px;
+
+
+					}
+			}
+		
+
+	}
+
+
+	.bio {
+		width: 100%;
+		max-width: 870px;
+		margin: 0 auto;
+		padding-top: 10px;
+		display: flex;
+		justify-content: space-evenly;
+		background-color: white;
+
+			.overview {
+				width: 48%;
+			}
+
+				.skills {
+					width: 48%;
+		
+				}
+					li {
+						.list();
+					}
+	}
+
+
