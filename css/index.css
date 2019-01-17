@@ -404,3 +404,87 @@ header nav a {
   padding: 5px;
   background-color: lightgray;
 }
+.exp-bottom {
+  width: 100%;
+  max-width: 870px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  border: 2px solid lightpink;
+}
+@media (max-width: 500px) {
+  .exp-bottom {
+    width: 100%;
+    max-width: 470px;
+    margin: 0;
+    margin-left: 12px;
+    margin-bottom: 20px;
+  }
+}
+.exp-bottom .column-one {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  text-align: center;
+}
+.exp-bottom .column-one .no-bg-line-head {
+  border-bottom: 0.5px solid lightpink;
+  background-color: lightpink;
+  font-family: 'Anton', sans-serif;
+}
+.exp-bottom .column-one .no-bg-line {
+  border-bottom: 0.5px solid lightpink;
+  background-color: lightpink;
+}
+.exp-bottom .column-two {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  text-align: center;
+}
+.exp-bottom .column-two .no-bg-line-head {
+  border-bottom: 0.5px solid lightpink;
+  background-color: lightpink;
+  font-family: 'Anton', sans-serif;
+}
+.exp-bottom .column-two .no-bg-line {
+  border-bottom: 0.5px solid lightpink;
+  background-color: lightpink;
+}
+.exp-bottom .column-three {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  text-align: center;
+}
+.exp-bottom .column-three .no-bg-line-head {
+  border-bottom: 0.5px solid lightpink;
+  background-color: lightpink;
+  font-family: 'Anton', sans-serif;
+}
+.exp-bottom .column-three .no-bg-line {
+  border-bottom: 0.5px solid lightpink;
+  background-color: lightpink;
+}
+.exp-bottom .column-four {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  text-align: center;
+}
+.exp-bottom .column-four .no-bg-line-head {
+  border-bottom: 0.5px solid lightpink;
+  background-color: lightpink;
+  font-family: 'Anton', sans-serif;
+}
+.exp-bottom .column-four .no-bg-line {
+  border-bottom: 0.5px solid lightpink;
+  background-color: lightpink;
+}
