@@ -139,7 +139,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Bangers', cursive;
+  font-family: 'Righteous', cursive;
   letter-spacing: 1px;
   margin-bottom: 15px;
   padding-top: 15px;
@@ -216,43 +216,6 @@ header nav a {
     text-align: center;
   }
 }
-.main-content {
-  width: 100%;
-  max-width: 870px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-top: 20px;
-  display: flex;
-  background-color: whitesmoke;
-}
-@media (max-width: 500px) {
-  .main-content {
-    width: 100%;
-    max-width: 490px;
-    display: flex;
-    margin: 0 auto;
-  }
-}
-.main-content .intro {
-  vertical-align: center;
-}
-@media (max-width: 500px) {
-  .main-content .intro {
-    width: 100%;
-    max-width: 490px;
-    display: flex;
-    margin: 0 auto;
-  }
-}
-.main-content .intro h2 {
-  font-size: 30px;
-  padding-bottom: 15px;
-  margin-bottom: 5px;
-  color: blue;
-}
-.main-content .intro p {
-  font-size: 20px;
-}
 .intro-bottom {
   width: 100%;
   max-width: 870px;
@@ -275,12 +238,22 @@ header nav a {
 }
 .intro-bottom .team-up {
   width: 100%;
-  flex: auto;
+  /*flex: auto;*/
   vertical-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 15px;
-  border-top: 1px solid gray;
+}
+.intro-bottom .team-up h2 {
+  color: blue;
+}
+.intro-bottom .team-up h4 {
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+.intro-bottom .team-up p {
+  font-family: 'Oswald', sans-serif;
+  line-height: 2;
 }
 .intro-bottom .team-up button {
   border: 1px solid black;
@@ -327,18 +300,17 @@ header nav a {
   }
 }
 .bio .skills {
-  width: 48%;
-}
-@media (max-width: 500px) {
-  .bio .skills {
-    width: 100%;
-    max-width: 490px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  width: 100%;
+  max-width: 490px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .bio li {
   border: 1px solid lightgray;
   padding: 10px 10px;
-  background-color: orange;
+}
+@media (max-width: 500px) {
+  .bio li {
+    background-color: orange;
+  }
 }

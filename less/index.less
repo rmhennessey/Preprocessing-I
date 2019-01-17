@@ -58,7 +58,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Bangers', cursive;
+	font-family: 'Righteous', cursive;
     letter-spacing: 1px;
 	margin-bottom: 15px;
 	padding-top: 15px;
@@ -169,51 +169,6 @@ header {
 
 				
 
-			
-
-.main-content {
-		width: 100%;
-		max-width: 870px;
-		margin: 0 auto;
-		padding-left: 20px;
-		padding-top: 20px;
-		display: flex;
-		background-color: whitesmoke;
-
-		@media (max-width: 500px) {
-				width: 100%;
-				max-width: 490px;
-				display: flex;
-				margin: 0 auto;
-			}
-	
-
-			.intro {
-				vertical-align: center;
-					
-				@media (max-width: 500px) {
-					width: 100%;
-					max-width: 490px;
-					display: flex;
-					margin: 0 auto;
-				}
-
-			
-				h2 {
-					font-size: 30px;
-					padding-bottom: 15px;
-					margin-bottom: 5px;
-					color: @call-color;
-				}
-
-					p {
-						font-size: 20px;
-					}
-			}
-
-}
-	
-
 .intro-bottom {
 		width: 100%;
 		max-width: 870px;
@@ -224,7 +179,7 @@ header {
 		display: flex;
 		background-color: whitesmoke;
 
-		@media (max-width: 500px) {
+	@media (max-width: 500px) {
 			width: 100%;
 			max-width: 490px;
 			display: flex;
@@ -233,30 +188,44 @@ header {
 			margin: 0px;
 		}
 		
-			.team-up {
-				width: 100%;
-				flex: auto;
-				vertical-align: center;
-				padding-top: 20px;
-				padding-bottom: 20px;
-				margin-bottom: 15px;
-				border-top: 1px solid gray;
-			
-					button {
-						border: 1px solid black;
-						border-radius: 5px;
-						background-color: @button-fy;
-						margin-top: 15px;
-						padding: 10px;
+
+		.team-up {
+			width: 100%;
+				/*flex: auto;*/
+			vertical-align: center;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			margin-bottom: 15px;
+
+				h2 {
+					color: @call-color;
+				}
+
+				h4 {
+					border-bottom: 1px solid black;
+					padding-bottom: 15px;
+				}
+
+				p {
+					font-family: 'Oswald', sans-serif;
+					line-height: 2;
+				}
+
+				button {
+					border: 1px solid black;
+					border-radius: 5px;
+					background-color: @button-fy;
+					margin-top: 15px;
+					padding: 10px;
 
 						@media (max-width: 500px){
 							width: 75%;
 							font-size: 20px;
 							background-color: @bigly;
-						}
+							}
 					}
-			}
-		
+			} 
+			
 
 }
 
@@ -294,19 +263,17 @@ header {
 			}
 
 				.skills {
-					width: 48%;
-		
-					@media (max-width: 500px){
-						width: 100%;
-						max-width: 490px;
-						margin: 0 auto;
-						padding: 20px;
+					width: 100%;
+					max-width: 490px;
+					margin: 0 auto;
+					padding: 20px;
 					}
-				}
-					li {
-						.list();
-						background-color: @button-fy;
-					}
-}
+						li {
+							.list();
 
+							@media (max-width: 500px) {
+								background-color: @button-fy;
+								}
+						}
+	}
 
