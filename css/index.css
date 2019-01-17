@@ -263,6 +263,16 @@ header nav a {
   display: flex;
   background-color: whitesmoke;
 }
+@media (max-width: 500px) {
+  .intro-bottom {
+    width: 100%;
+    max-width: 490px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0px;
+  }
+}
 .intro-bottom .team-up {
   width: 100%;
   flex: auto;
@@ -278,6 +288,13 @@ header nav a {
   background-color: orange;
   margin-top: 15px;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .intro-bottom .team-up button {
+    width: 75%;
+    font-size: 20px;
+    background-color: red;
+  }
 }
 .bio {
   width: 100%;
